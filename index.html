@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="./css/juego.css">
+    <link rel="icon" href="./imagenes/juegos.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./js/juego.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Memoria</h1>
+        <div class="game-board"></div>
+        <div class="stats">
+            <div>Pares completos: <span id="pairs">0</span></div>
+            <div>Pares restantes: <span id="remaining">8</span></div>
+            <div>Tiempo: <span id="timer">00:00:00</span></div>
+        </div>
+        <button onclick="initGame()">Iniciar</button>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>¡Felicidades!</h2>
+                <p>Has completado el juego en <span id="final-time"></span>.</p>
+                <button onclick="closePopup()">De nuevo</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
